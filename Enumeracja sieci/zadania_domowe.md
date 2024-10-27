@@ -79,7 +79,7 @@ Tym razem wypróbuj dodatkowo opcję -vv.
 ---
 
 ### ✅ **Rozwiązanie**
-<!-- Wstaw rozwiązanie tutaj -->
+Do rozwiazania tego zadania uzywamy komendy nmap wraz z flagami `-sT` oraz `-vv`.
 
 ```bash
 nmap -sT 192.168.100.0/24 -vv
@@ -97,7 +97,7 @@ Tym razem wypróbuj dodatkowo opcję -vv.
 ---
 
 ### ✅ **Rozwiązanie**
-<!-- Wstaw rozwiązanie tutaj -->
+Do rozwiazania tego zadania uzywamy komendy nmap wraz z flagami `-sV` oraz `-vv`.
 
 ```bash
 nmap -sV 192.168.100.0/24 -vv
@@ -115,7 +115,7 @@ Tym razem wypróbuj dodatkowo opcję -vv.
 ---
 
 ### ✅ **Rozwiązanie**
-<!-- Wstaw rozwiązanie tutaj -->
+Do rozwiazania tego zadania uzywamy komendy nmap wraz z flagami `-sC` oraz `-vv`.
 
 ```bash
 nmap -sC 192.168.100.0/24 -vv
@@ -133,7 +133,7 @@ Tym razem wypróbuj dodatkowo opcję -vv.
 ---
 
 ### ✅ **Rozwiązanie**
-<!-- Wstaw rozwiązanie tutaj -->
+Do rozwiazania tego zadania uzywamy komendy nmap wraz z flagami `-O`, `--osscan-guess` oraz `-vv`.
 
 ```bash
 nmap -O --osscan-guess 192.168.100.0/24 -vv
@@ -151,7 +151,7 @@ Większość opcji nmapa możemy ze sobą łączyć.
 ---
 
 ### ✅ **Rozwiązanie**
-<!-- Wstaw rozwiązanie tutaj -->
+Do rozwiazania tego zadania uzywamy komendy nmap wraz z flagami `-sT`, `-sV`, `-sC`, `-O`, `--osscan-guess` oraz `-vv`.
 
 ```bash
 nmap -sT -sV -sC -O --osscan-guess -p- -vv  192.168.200.152
@@ -168,7 +168,7 @@ Celem zadania jest odczytanie flagi z pliku **flag2.2p.txt** na serwerze **HTTP*
 
 ### ✅ **Rozwiązanie**
 
-By rozwiazac to zadanie musimy polaczyc sie z naszym serwerem **HTTP** uzywajac `curl`, lub `wget`. Nieoczywista rzecza w tym zadaniu byl fakt, ze domyslny port dla http, czyli **80** nie byl otwarty. Web-serwer ktory znajdowal sie na hoscie byl ustawiony pod przyjmowanie polaczen przez port **8080**, wiec musielismy go dodac po znaku `:` po adresie ip hosta. Zeby takie informacje pozyskac musielismy wczesniej uzyc komendy `nmap <ip>`
+By rozwiazac to zadanie musimy polaczyc sie z naszym serwerem **HTTP** uzywajac `curl`, lub `wget`. Nieoczywista rzecza w tym zadaniu byl fakt, ze domyslny port dla http, czyli **80** nie byl otwarty. Web-serwer ktory znajdowal sie na hoscie byl ustawiony pod przyjmowanie polaczen przez port **8080**, wiec musielismy dodac ten port po znaku `:` po adresie ip hosta. Zeby takie informacje pozyskac musielismy wczesniej uzyc komendy `nmap <ip>`.
 
 ```bash
 curl http://192.168.200.152:8080/flag2.2p.txt
