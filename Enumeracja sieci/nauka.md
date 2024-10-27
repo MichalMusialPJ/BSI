@@ -45,13 +45,13 @@ nmap -sT -sV -sC -O --osscan-guess -p- -vv 192.168.200.52
 
 ### ❓ **Wytłumaczenie**
 - Co dają nam flagi użyte w komendzie?
-> `-sT` To flaga, ktora sprawia, ze nmap wykonuje pelne skanowanie TCP, jest ono widoczne dla administratora, bo nawiazuje pelne polaczenie z portem, natomaist nie potrzebujesz uprawnien root'a by to zrobic.
-`-sV` To flaga, ktora pozwala nam na sprawdzenie wersji uslug dzialajacyh na hoscie.
-`-sC` To flaga ktora uruchamia domyslne skrypy z bazy skryptow nmap. Sa to skrypty przeznaczone do wykonania podstawowych testow i wykrywania luk w zabezpieczeniach.
-`-O` To flaga, ktora pozwala nam na zidentyfikowanie systemu operacyjnego skanowanego hosta. (Czyli po prostu tego na ktorym wykonujemy nmap)
-`-p-` To flaga ktora sprawia, ze nmap skanuje wszystkie porty dostepne, czyli te z zakresu 1-65535. Bez tej flagi nmap skanuje tylko podstawowe porty (Co zwykle wystarcza).
+>`-sT` To flaga, ktora sprawia, ze nmap wykonuje pelne skanowanie TCP, jest ono widoczne dla administratora, bo nawiazuje pelne polaczenie z portem, natomaist nie potrzebujesz uprawnien root'a by to zrobic. <br>
+`-sV` To flaga, ktora pozwala nam na sprawdzenie wersji uslug dzialajacyh na hoscie. <br>
+`-sC` To flaga ktora uruchamia domyslne skrypy z bazy skryptow nmap. Sa to skrypty przeznaczone do wykonania podstawowych testow i wykrywania luk w zabezpieczeniach. <br>
+`-O` To flaga, ktora pozwala nam na zidentyfikowanie systemu operacyjnego skanowanego hosta. (Czyli po prostu tego na ktorym wykonujemy nmap) <br>
+`-p-` To flaga ktora sprawia, ze nmap skanuje wszystkie porty dostepne, czyli te z zakresu 1-65535. Bez tej flagi nmap skanuje tylko podstawowe porty (Co zwykle wystarcza). <br>
 `--osscan-guess` Pomaga w zidentyfikowaniu systemu operacyjnego, gdy taka informacja nie jest jawna (jest wiele powodow ktore moga byc tego przyczyna m.in. brak uprawnien root'a). "Zgaduje" na podstawie danych. Odpowiedz nie zawsze jest precyzyjna.
-- Co to jest `-vv`?
+- Co to jest `-vv`? 
 > `-vv` Pozwala nam na otrzymanie "logow" wykonywania komendy, zwykle stosuje sie to w celu debugowania. Mozliwe jest uzycie `-v` , `-vv` lub `-vvv`. Roznia sie od siebie iloscia informacji ktore nam pokaze. `-v` pokaze nam najmniej a `-vvv` najwiecej. Ta flaga moze byc stosowana do wiekszosci komend, np do `ssh`.
 
 ---
@@ -82,9 +82,9 @@ cat flag2.2p.txt
 
 ### ❓ **Wytłumaczenie**
 - Czym jest `curl`?
-> curl to narzedzie, ktore pozwala na wykonywanie requestow **HTTP** lub **HTTPS** do danego adresu **ip** lub **url**. Czesto jest stosowany do tego, by sprawdzic czy nasz web-server dziala, w srodowiskach gdzie nie mamy przegladarki internetowej. Moze obslugiwac tez protokoly takie jak FTP IMAP POP3 i inne.
+> `curl` to narzedzie, ktore pozwala na wykonywanie requestow **HTTP** lub **HTTPS** do danego adresu **ip** lub **url**. Czesto jest stosowany do tego, by sprawdzic czy nasz web-server dziala, w srodowiskach gdzie nie mamy przegladarki internetowej. Moze obslugiwac tez protokoly takie jak FTP IMAP POP3 i inne.
 - Czym jest `wget`?
-> wget to narzedzie, ktore sluzy znam do pobierania roznych plikow z serwerow internetowych za pomoca protokolow takich jak **HTTP**, **HTTPS** lub **FTP**. Jest dobrym narzedziem do pobierania pojedynczych plikow, calych stron jak i rekurencyjnego pobierania zasobow, np. mamy strone internetowa na jakims serwerze FTP i mozemy wgetem pobrac ja rekurencyjnie cala (Czyli wraz z zawartoscia podfolderow).
+> `wget` to narzedzie, ktore sluzy znam do pobierania roznych plikow z serwerow internetowych za pomoca protokolow takich jak **HTTP**, **HTTPS** lub **FTP**. Jest dobrym narzedziem do pobierania pojedynczych plikow, calych stron jak i rekurencyjnego pobierania zasobow, np. mamy strone internetowa na jakims serwerze FTP i mozemy wgetem pobrac ja rekurencyjnie cala (Czyli wraz z zawartoscia podfolderow).
 - Co sprawia, że jesteśmy w stanie do niektórych maszyn połączyć się po **HTTP**?
 > To bardzo zasadne pytanie, ktore moze sie pojawic. Mozemy sie polaczyc po **HTTP** (Czyli przy uzyciu np. `curl`), gdy dany host ma skonfiguwany web-serwer, czyli jakiego nginx, apache albo IIS. Bardzo ogolnie mowiac, po prostu host musi byc przystosowany do tego, by przyjmowac takie requesty.
 
@@ -127,7 +127,7 @@ cat <filename>
 
 ### ❓ **Wytłumaczenie**
 - Czym jest komenda `ftp` i czym jest **ftp**?
-> FTP jest protokolem, ktory sluzy do przesylania plikow miedzy komputerami w sieci. Dziala na zasadzie klient-serwer. Zwykle dziala on na porcie **21** i **20**, 21 sluzy do kontroli polaczenia a 20 do faktycznego przesylania plikow.
+> FTP jest protokolem, ktory sluzy do przesylania plikow miedzy komputerami w sieci. Dziala na zasadzie klient-serwer. Zwykle dziala on na porcie **21** i **20**, 21 sluzy do kontroli polaczenia a 20 do faktycznego przesylania plikow. <br>
  Sama komenda `ftp` umozliwia nam polaczenie z serwerem **FTP** z poziomu terminala i zarzadzanie przesylaniem plikow.
 - Czym jest komenda `dir`?
 > Po zalogowaniu na serwer **FTP** mozemy uzyc jej do wyswietlenie listy plikow i katalogow. To takie `ls` tylko ze na serwerze **FTP**.
@@ -186,7 +186,7 @@ Odpowiedź wklejamy na stronę z zadaniem.
 - Czym jest `smbclient`?
 > Jest to narzedzie, ktore pozwala nam na polaczenie oraz zarzadzanie serwerem **SMB** z poziomu terminala.
 - Co robią flagi `-N` i `-L`?
-> `-N` To flaga, ktora sprawia, ze nasz smbclient probuje polaczyc sie do serwera bez podawania hasla. Jest to mozliwe, gdy serwer pozwala na dostep anonimowy.
+> `-N` To flaga, ktora sprawia, ze nasz smbclient probuje polaczyc sie do serwera bez podawania hasla. Jest to mozliwe, gdy serwer pozwala na dostep anonimowy. <br>
  `-L` To flaga, ktora wyswietla nam liste dostepnych zasobow (np. foldery, dyski, drukarki) na danym serwerze **SMB**
 
 
