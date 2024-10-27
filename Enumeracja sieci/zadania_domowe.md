@@ -11,7 +11,9 @@ Tym razem wypróbuj dodatkowo opcję -vv.
 ---
 
 ### ✅ **Rozwiązanie**
+
 Jakims chujem ta komenda mi rozwiazala to zadanie XD idk
+
 
 ```bash
 nmap -sT -sC 192.168.100.0/24 -vv
