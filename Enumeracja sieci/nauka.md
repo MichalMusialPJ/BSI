@@ -26,7 +26,7 @@ nmap -A 192.168.100.2
 - Co robi flaga `-A`?
 > Ogolnie sluzy nam do bardziej szczegolowego skanowania, pozwala nam na sprawdzenie systemu operacyjnego, wersji uslug oraz skanowanie skryptow.
 - Czemu potrzebowaliśmy użyć `nmap`?
-> W zadaniu bylo zdefiniowane, ze musimy sprawdzic port na ktorym nasluchuje usluga ssh na danym hoscie. Natomaist mielismy alternatywe do tego rozwiazania. Moglismy uzyc komendy `nc -zv <adres_IP> <zakres_portow>`, natomaist na pierwszy rzut oka widac, ze jest to bardziej skomplikowane rozwiazanie.
+> W zadaniu bylo zdefiniowane, ze musimy sprawdzic port na ktorym nasluchuje usluga ssh na danym hoscie. Natomaist mielismy alternatywe do tego rozwiazania. Moglismy uzyc komendy `nc -zv <adres_IP> <zakres_portow>`, natomaist jest to rozwiazanie, ktore przynajmniej narazie wykracza poza program.
 
 ---
 
@@ -86,7 +86,7 @@ cat flag2.2p.txt
 - Czym jest `wget`?
 > `wget` to narzedzie, ktore sluzy znam do pobierania roznych plikow z serwerow internetowych za pomoca protokolow takich jak **HTTP**, **HTTPS** lub **FTP**. Jest dobrym narzedziem do pobierania pojedynczych plikow, calych stron jak i rekurencyjnego pobierania zasobow, np. mamy strone internetowa na jakims serwerze FTP i mozemy wgetem pobrac ja rekurencyjnie cala (Czyli wraz z zawartoscia podfolderow).
 - Co sprawia, że jesteśmy w stanie do niektórych maszyn połączyć się po **HTTP**?
-> To bardzo zasadne pytanie, ktore moze sie pojawic. Mozemy sie polaczyc po **HTTP** (Czyli przy uzyciu np. `curl`), gdy dany host ma skonfiguwany web-serwer, czyli jakiego nginx, apache albo IIS. Bardzo ogolnie mowiac, po prostu host musi byc przystosowany do tego, by przyjmowac takie requesty.
+> To bardzo zasadne pytanie, ktore moze sie pojawic. Mozemy sie polaczyc po **HTTP** (Czyli przy uzyciu np. `curl`), gdy dany host ma skonfiguwany web-serwer, czyli jakiegos nginx, apache albo IIS. Bardzo ogolnie mowiac, po prostu host musi byc przystosowany do tego, by przyjmowac takie requesty.
 
 ---
 
