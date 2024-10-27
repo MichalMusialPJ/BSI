@@ -1,4 +1,4 @@
-# 🕵️‍♂️ **Enumeracja Sieci**
+# 🕵️‍♂️ **Enumeracja Sieci - Nauka**
 
 ## 2.1 
 ### 📌 **Polecenie**
@@ -215,7 +215,10 @@ Odpowiedź wklejamy na stronę z zadaniem.
 
 ### ❓ **Wytłumaczenie**
 - <!-- Wstaw pytanie 1 -->
+>
 - <!-- Wstaw pytanie 2 -->
+>
 - <!-- Wstaw pytanie 3 -->
+>
 
 ---
